@@ -170,11 +170,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:text="15,000 원"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/medium"
+                        android:text="15,000"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp"
+                        app:layout_constraintEnd_toStartOf="@+id/textView19"
+                        app:layout_constraintTop_toBottomOf="@+id/book_title" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
                         android:fontFamily="@font/medium"
+                        android:text="원"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/book_title" />
 
