@@ -1,4 +1,4 @@
-package com.example.bookbook.bookinfo
+package com.example.bookbook.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

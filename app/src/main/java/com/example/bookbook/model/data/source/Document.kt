@@ -1,4 +1,4 @@
-package com.example.bookbook.bookdata
+package com.example.bookbook.model.data.source
 
 data class Document(
     val authors: List<String>,

@@ -1,4 +1,4 @@
-package com.example.bookbook.main
+package com.example.bookbook.view.activity
 
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
