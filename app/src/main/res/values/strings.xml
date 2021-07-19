@@ -1,3 +1,41 @@
 <resources>
     <string name="app_name">BookBook</string>
+
+    <string name="title_book">책 소개</string>
+    <string name="book_search">검색</string>
+
+    <string name="title_doc_sort">정렬</string>
+    <string name="doc_sort_accuracy">정확도순</string>
+    <string name="doc_sort_recency">최신순</string>
+
+    <string name="title_search_target">필터</string>
+    <string name="search_target_all">전체</string>
+    <string name="search_target_title">제목</string>
+    <string name="search_target_isbn">ISBN</string>
+    <string name="search_target_publisher">출판사</string>
+    <string name="search_target_person">인명</string>
+
+    <string name="book_item_price">가격</string>
+    <string name="book_item_publisher">출판</string>
+
+    <string name="currency_korean">%s원</string>
+
+    <string name="dialog_apply">적용</string>
+
+    <string name="author_format">%s 지음</string>
+    <string name="contents_format">%s…</string>
+
+    <string name="next_web">상세 링크 열기</string>
+    <string name="next_choose_browser">브라우저 선택</string>
+
+    <string name="network_message_welcome_title">환영합니다.</string>
+    <string name="network_message_welcome_message">검색어를 입력해주세요.</string>
+
+    <string name="network_message_no_item_title">\'%s\'에 대한 검색 결과가 없습니다.</string>
+    <string name="network_message_no_item_message">검색어의 철자가 정확한지 확인해주세요.\n비슷한 다른 검색어를 입력해보세요.\n단어의 수를 줄여보세요.</string>
+
+    <string name="network_message_error_title">알 수 없는 문제가 발생하였습니다.</string>
+    <string name="network_message_error_message">죄송합니다, 실행에 문제가 발생하였습니다.\n온라인으로 이동해 추가로 도움을 받아보시기 바랍니다.</string>
+
+    <string name="retry">다시 시도</string>
 </resources>

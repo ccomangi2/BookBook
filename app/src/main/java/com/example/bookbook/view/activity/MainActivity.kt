@@ -1,20 +1,21 @@
 package com.example.bookbook.view.activity
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.example.bookbook.R
-import dagger.android.AndroidInjector
-import dagger.android.HasAndroidInjector
+import com.example.bookbook.base.view.BaseActivity
+import com.example.bookbook.view.fragment.BookListFragment
 
 
-class MainActivity : AppCompatActivity(), HasAndroidInjector {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+class MainActivity : BaseActivity() {
+    override val frameLayoutId = R.id.contentFrame
+
+    override fun setContentView() {
         setContentView(R.layout.activity_main)
-
     }
 
-    override fun androidInjector(): AndroidInjector<Any> {
-        TODO("Not yet implemented")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        replaceFragment(BookListFragment::class.java)
     }
 }

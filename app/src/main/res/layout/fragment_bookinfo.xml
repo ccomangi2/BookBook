@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/title_bar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -19,6 +19,25 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetStart="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/back_btn"
@@ -57,8 +76,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -122,6 +142,17 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
+                            android:id="@+id/book_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="2020.20.20"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="@font/medium"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/book_title" />
+
+                        <TextView
                             android:id="@+id/textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -132,7 +163,7 @@
                             android:textSize="18sp"
                             android:fontFamily="@font/medium"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/book_title" />
+                            app:layout_constraintTop_toBottomOf="@+id/book_date" />
 
                         <TextView
                             android:id="@+id/book_house"
@@ -140,12 +171,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_marginTop="5dp"
+                            android:fontFamily="@font/medium"
                             android:text="출판사임"
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
-                            android:fontFamily="@font/medium"
                             app:layout_constraintStart_toEndOf="@+id/textView"
-                            app:layout_constraintTop_toBottomOf="@+id/book_title" />
+                            app:layout_constraintTop_toBottomOf="@+id/book_date" />
 
                         <TextView
                             android:id="@+id/textView1"
@@ -176,22 +207,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:layout_marginEnd="5dp"
+                            android:layout_marginEnd="25dp"
                             android:fontFamily="@font/medium"
-                            android:text="15,000"
-                            android:textColor="#FFFFFF"
-                            android:textSize="24sp"
-                            app:layout_constraintEnd_toStartOf="@+id/textView19"
-                            app:layout_constraintTop_toBottomOf="@+id/book_title" />
-
-                        <TextView
-                            android:id="@+id/textView19"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:fontFamily="@font/medium"
-                            android:text="원"
+                            android:text="@string/currency_korean"
                             android:textColor="#FFFFFF"
                             android:textSize="24sp"
                             app:layout_constraintEnd_toEndOf="parent"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="60dp" android:height="87dp"/>
+            <solid android:color="@color/colorTransparent" />
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_menu_book"
+        android:width="30dp"
+        android:height="30dp"
+        android:gravity="center"/>
+</layer-list>
